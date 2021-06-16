@@ -34,6 +34,10 @@ public class Iterating_Collections {
         	System.out.println(n);
         }
         
+        //Java 8 Lambda  for loop
+        System.out.println("\nPrint using java8 lambda\n");
+        
+        names.stream().forEach((n)->System.out.println(n));
 	}
 
 }
