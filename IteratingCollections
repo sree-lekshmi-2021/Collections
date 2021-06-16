@@ -1,0 +1,39 @@
+package collectiosExample.com;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Iterator;
+
+public class Iterating_Collections {
+
+	public static void main(String[] args) {
+		
+		ArrayList<String> names=new ArrayList<String>(Arrays.asList("Anu",
+				"Manu","Sonu","Pavi","Geetha"));
+		
+		Iterator<String> iterator = names.iterator();
+		 
+        // while loop
+		System.out.println("Print using while loop\n");
+        while (iterator.hasNext()) {
+        System.out.println(iterator.next());
+        }
+        
+       // for loop
+		
+        System.out.println("\nPrint using for loop\n");
+        for (Iterator<String> iterator1 = names.iterator(); iterator1.hasNext();) {
+            System.out.println(iterator1.next());
+            }
+        
+        
+       // for each
+        System.out.println("\nPrint using for each more convinient way\n");
+        for(String n: names) {
+        	
+        	System.out.println(n);
+        }
+        
+	}
+
+}
