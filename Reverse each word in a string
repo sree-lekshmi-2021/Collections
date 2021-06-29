@@ -1,0 +1,35 @@
+package collectiosExample.com;
+
+
+class Reverse_String
+{
+	public String toReverse(String name)
+	{
+		String arr[]=name.split("\\s");
+		String word="";
+		
+		for(String i:arr)
+		{
+			StringBuilder sb=new StringBuilder(i);
+			StringBuilder rev= sb.reverse();
+			word+=rev.toString()+" ";
+			
+		}
+		
+		return word.trim();
+	}
+}
+
+
+
+
+public class Reverse_wordsina_String {
+public static void main(String[] args) {
+    
+	Reverse_String revstr =new Reverse_String();
+	System.out.println(revstr.toReverse("My name is Sreelekshmi"));
+
+	}
+}
+
+
